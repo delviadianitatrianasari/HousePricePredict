@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HouseOracle</string>
+    <string name="app_logo">Logo</string>
+    <string name="back">Kembali</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="dataset">Dataset</string>
+    <string name="fitur">Fitur</string>
+    <string name="model">Model</string>
+    <string name="simulasi_model">Simulasi Model</string>
+</resources>

@@ -1,0 +1,572 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:backgroundTint="#E1F0DA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header dengan teks "HouseOracle" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="HouseOracle"
+                android:textColor="#618A4E"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:background="#596C43" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-19dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Fitur"
+            android:textColor="#233223"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Garis Pembatas -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:background="#596C43" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tabel Fitur:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Header Tabel -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Nama Variable"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Tipe Data"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Keterangan"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="price"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="float64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Harga rumah dalam dolar"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="bedrooms"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Jumlah kamar tidur"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="bathrooms"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="float64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Jumlah kamar mandi"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="floors"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="float64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Jumlah lantai rumah"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 8 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="waterfront"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Apakah properti menghadap air"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 10 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="condition"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Kondisi properti"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 11 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="grade"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Peringkat secara umum berdasarkan sistem Grading Seattle"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 13 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="sqft_basement"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Luas basement dalam kaki persegi"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <!-- Baris 14 -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="yr_built"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="int64"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tahun pembangunan rumah"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
